@@ -3,38 +3,83 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CUT 工作室</title>
-<meta name="description" content="CUT 工作室 —— Minecraft Java 版与基岩版服务器">
-<style>
-  :root { color-scheme: dark; }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
-    background: #12161f; color: #eef2f9;
-    font: 16px/1.8 -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
-  }
-  .box { width: min(90vw, 560px); text-align: center; padding: 40px 0; }
-  .mark {
-    width: 72px; height: 72px; margin: 0 auto 26px; border-radius: 18px;
-    background: #1f2735; border: 1px solid rgba(255,255,255,.14);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 26px; font-weight: 800; letter-spacing: .06em;
-  }
-  h1 { font-size: clamp(30px, 7vw, 46px); margin: 0 0 10px; letter-spacing: .1em; }
-  .sub { color: #93a3bd; font-size: 15px; letter-spacing: .04em; margin-bottom: 30px; }
-  .rule { height: 1px; background: rgba(255,255,255,.12); margin: 30px 0; }
-  p { color: #b9c6da; margin: 0 0 12px; }
-  .dim { color: #6f7f96; font-size: 13.5px; }
-</style>
+<title>CUT Studio · 创异触觉工作室</title>
+<meta name="description" content="CUT Studio（创异触觉工作室）—— 专注 Minecraft Java 版与基岩版服务器的开发与运营。">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#12161F">
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <div class="box">
-    <div class="mark">CUT</div>
-    <h1>CUT 工作室</h1>
-    <div class="sub">Minecraft Java 版 · 基岩版服务器</div>
-    <div class="rule"></div>
-    <p>网站正在建设中。</p>
-    <p class="dim">Studio site under construction.</p>
+
+<div class="wrap">
+  <header class="topbar">
+    <img src="assets/mark-white.svg" alt="CUT Studio">
+    <span class="n">CUT STUDIO</span>
+    <span class="sp"></span>
+    <a class="q" href="#servers">服务器</a>
+    <a class="q" href="#contact">联系</a>
+  </header>
+
+  <div class="hero">
+    <img class="mark" src="assets/mark-white.svg" alt="">
+    <h1>创异触觉</h1>
+    <div class="en">CREATIVE UNIQUE TOUCH</div>
+    <div class="zh">创异触觉工作室</div>
+    <p>
+      CUT Studio 专注 Minecraft 服务器的开发与运营 ——
+      从玩法设计、模组选型到长期维护，把每一个题材都做成一台能玩很久的服。
+    </p>
   </div>
+
+  <section id="servers">
+    <h2>服务器</h2>
+
+    <a class="srv" href="https://aaa33839917.github.io/Deep-Space-Web/yiciyuan/">
+      <div class="top">
+        <span class="nm">异次元</span>
+        <span class="ver">Bedrock 1.26</span>
+        <span class="tag live">已开放</span>
+      </div>
+      <div class="desc">
+        基岩版专用服 —— 以「农夫乐事」系列为主的料理与农业玩法，外加 BOSS 战与生存推进。全中文。
+      </div>
+      <div class="go">前往官网 →</div>
+    </a>
+
+    <div class="srv disabled">
+      <div class="top">
+        <span class="nm">塔科夫硬核生存</span>
+        <span class="ver">Java 1.20.1</span>
+        <span class="tag dev">开发中</span>
+      </div>
+      <div class="desc">搜刮 · 博弈 · 撤离 · 对抗 —— 硬核生存向，重模组化。</div>
+    </div>
+
+    <div class="srv disabled">
+      <div class="top">
+        <span class="nm">中世纪</span>
+        <span class="ver">Java 1.20.1</span>
+        <span class="tag dev">开发中</span>
+      </div>
+      <div class="desc">中世纪题材的模组服，建筑与冒险并重。</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>联系</h2>
+    <div class="contact">
+      <span class="k">QQ</span>
+      <span class="v">3398481273</span>
+    </div>
+  </section>
+
+  <footer>
+    <div class="r">
+      <span>CUT Studio · 创异触觉工作室</span>
+      <span class="sp"></span>
+    </div>
+  </footer>
+</div>
+
 </body>
 </html>
