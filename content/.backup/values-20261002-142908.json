@@ -1,0 +1,12 @@
+{
+  "page_title": "",
+  "meta_desc": "",
+  "hero_zh": "",
+  "hero_en": "",
+  "hero_sub": "",
+  "hero_text": "",
+  "servers": [],
+  "contact_qq": "1",
+  "footer_text": "",
+  "_说明": "CUT 官网的内容值。**改这里就等于改页面**（页面由 _build/render.py 生成）。推荐在控制台「官网管理 → 内容」里改；直接改本文件后跑 python3 _build/render.py 也行。"
+}

@@ -1,0 +1,117 @@
+{
+  "_说明": "CUT 官网哪些内容可以在控制台里改。控制台读这个文件自动生成表单——新增一个可改字段就加在这里，不用改控制台代码。",
+  "title": "CUT 工作室官网 · 内容",
+  "generator": "_build/render.py",
+  "groups": [
+    {
+      "name": "页面头部",
+      "fields": [
+        {
+          "key": "page_title",
+          "label": "浏览器标题",
+          "type": "text",
+          "help": "标签页上显示的字"
+        },
+        {
+          "key": "meta_desc",
+          "label": "搜索简介",
+          "type": "textarea",
+          "help": "搜索引擎与分享卡片上显示的简介（一句话）"
+        }
+      ]
+    },
+    {
+      "name": "首屏",
+      "fields": [
+        {
+          "key": "hero_zh",
+          "label": "主标题",
+          "type": "text"
+        },
+        {
+          "key": "hero_en",
+          "label": "英文副题",
+          "type": "text"
+        },
+        {
+          "key": "hero_sub",
+          "label": "中文小字",
+          "type": "text"
+        },
+        {
+          "key": "hero_text",
+          "label": "介绍段落",
+          "type": "textarea"
+        }
+      ]
+    },
+    {
+      "name": "服务器列表",
+      "fields": [
+        {
+          "key": "servers",
+          "label": "服务器",
+          "type": "list",
+          "help": "顺序就是页面上的顺序。链接留空 = 卡片不可点（开发中的那种）。",
+          "item": [
+            {
+              "key": "name",
+              "label": "名称",
+              "type": "text"
+            },
+            {
+              "key": "ver",
+              "label": "版本",
+              "type": "text"
+            },
+            {
+              "key": "tag",
+              "label": "状态标签",
+              "type": "select",
+              "options": [
+                {
+                  "value": "live",
+                  "label": "已开放"
+                },
+                {
+                  "value": "dev",
+                  "label": "开发中"
+                }
+              ]
+            },
+            {
+              "key": "url",
+              "label": "链接（留空=不可点）",
+              "type": "text"
+            },
+            {
+              "key": "link_label",
+              "label": "链接文字",
+              "type": "text"
+            },
+            {
+              "key": "desc",
+              "label": "简介",
+              "type": "textarea"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "页脚",
+      "fields": [
+        {
+          "key": "contact_qq",
+          "label": "联系 QQ",
+          "type": "text"
+        },
+        {
+          "key": "footer_text",
+          "label": "页脚文字",
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}

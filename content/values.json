@@ -1,0 +1,37 @@
+{
+  "page_title": "CUT Studio · 创异触觉工作室",
+  "meta_desc": "CUT Studio（创异触觉工作室）—— 专注 Minecraft Java 版与基岩版服务器的开发与运营。",
+  "hero_zh": "创异触觉",
+  "hero_en": "CREATIVE UNIQUE TOUCH",
+  "hero_sub": "创异触觉工作室",
+  "hero_text": "CUT Studio 专注 Minecraft 服务器的开发与运营 ——\n从玩法设计、模组选型到长期维护，把每一个题材都做成一台能玩很久的服。",
+  "servers": [
+    {
+      "name": "异次元",
+      "ver": "Bedrock 1.26",
+      "tag": "live",
+      "url": "https://aaa33839917.github.io/Deep-Space-Web/yiciyuan/",
+      "link_label": "前往官网 →",
+      "desc": "基岩版专用服 —— 以「农夫乐事」系列为主的料理与农业玩法，外加 BOSS 战与生存推进。全中文。"
+    },
+    {
+      "name": "塔科夫硬核生存",
+      "ver": "Java 1.20.1",
+      "tag": "dev",
+      "url": "",
+      "link_label": "",
+      "desc": "搜刮 · 博弈 · 撤离 · 对抗 —— 硬核生存向，重模组化。"
+    },
+    {
+      "name": "中世纪",
+      "ver": "Java 1.20.1",
+      "tag": "dev",
+      "url": "",
+      "link_label": "",
+      "desc": "中世纪题材的模组服，建筑与冒险并重。"
+    }
+  ],
+  "contact_qq": "3398481273",
+  "footer_text": "CUT Studio · 创异触觉工作室",
+  "_说明": "CUT 官网的内容值。**改这里就等于改页面**（页面由 _build/render.py 生成）。推荐在控制台「官网管理 → 内容」里改；直接改本文件后跑 python3 _build/render.py 也行。"
+}

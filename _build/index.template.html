@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{page_title}}</title>
+<meta name="description" content="{{meta_desc}}">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#12161F">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="wrap">
+  <header class="topbar">
+    <img src="assets/mark-white.svg" alt="CUT Studio">
+    <span class="n">CUT STUDIO</span>
+    <span class="sp"></span>
+    <a class="q" href="#servers">服务器</a>
+    <a class="q" href="#contact">联系</a>
+  </header>
+
+  <div class="hero">
+    <img class="mark" src="assets/mark-white.svg" alt="">
+    <h1>{{hero_zh}}</h1>
+    <div class="en">{{hero_en}}</div>
+    <div class="zh">{{hero_sub}}</div>
+    <p>{{hero_text}}</p>
+  </div>
+
+  <section id="servers">
+    <h2>服务器</h2>
+{{servers_html}}  </section>
+
+  <section id="contact">
+    <h2>联系</h2>
+    <div class="contact">
+      <span class="k">QQ</span>
+      <span class="v">{{contact_qq}}</span>
+    </div>
+  </section>
+
+  <footer>
+    <div class="r">
+      <span>{{footer_text}}</span>
+      <span class="sp"></span>
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>
