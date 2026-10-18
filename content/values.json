@@ -7,10 +7,10 @@
   "hero_text": "CUT Studio 专注 Minecraft 服务器的开发与运营 ——\n从玩法设计、模组选型到长期维护，把每一个题材都做成一台能玩很久的服。",
   "servers": [
     {
-      "name": "异次元",
+      "name": "永恒的旅途",
       "ver": "Bedrock 1.26",
       "tag": "live",
-      "url": "https://aaa33839917.github.io/Deep-Space-Web/yiciyuan/",
+      "url": "https://aaa33839917.github.io/Deep-Space-Web/yonghengdelvtu/",
       "link_label": "前往官网 →",
       "desc": "基岩版专用服 —— 以「农夫乐事」系列为主的料理与农业玩法，外加 BOSS 战与生存推进。全中文。"
     },
