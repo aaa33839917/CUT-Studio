@@ -1,0 +1,118 @@
+/* ============================================================================
+   永恒的旅途 —— 独立的中性皮肤
+   ★ 为什么不用 assets/style.css：
+     永恒的旅途是两个工作室联合运营的项目，它的官方页**不应该长得像任何一家的站**。
+     所以这里刻意用一套中性的灰阶，不带品牌色、不带背景图、不做毛玻璃特效。
+     （2026-09-29 用户要求：「介绍页面写的中性一点，不要突出任何一个工作室，
+       还有网页风格也要中性一点」）
+   ========================================================================== */
+:root{
+  --bg:#17181C;        /* 中性深灰，不偏蓝 */
+  --card:#1E2026;
+  --line:rgba(255,255,255,.12);
+  --fg:#E9E9EC;
+  --dim:#9A9AA2;
+  --dim2:#6E6E78;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{
+  background:var(--bg); color:var(--fg);
+  font:16px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+
+.yi-top{border-bottom:1px solid var(--line);background:var(--card)}
+.yi-top .in{max-width:760px;margin:0 auto;padding:20px 24px;display:flex;align-items:center;gap:11px}
+.yi-top .logo{width:34px;height:34px;border-radius:8px;display:block;flex:none;
+             object-fit:cover;image-rendering:pixelated;
+             box-shadow:0 1px 6px rgba(0,0,0,.35)}
+.yi-top .dot{width:9px;height:9px;border-radius:50%;background:var(--fg);opacity:.85}
+.yi-top .nm{font-size:15px;font-weight:700;letter-spacing:.26em}
+.yi-top .en{font-size:11px;color:var(--dim2);letter-spacing:.22em}
+
+.yi-wrap{max-width:760px;margin:0 auto;padding:52px 24px 80px}
+.yi-hero-logo{display:block;width:84px;height:84px;border-radius:18px;margin:0 0 22px;
+              object-fit:cover;image-rendering:pixelated;
+              box-shadow:0 6px 22px rgba(0,0,0,.38)}
+.yi-wrap h1{font-size:clamp(30px,6vw,42px);margin:0 0 12px;letter-spacing:.1em;font-weight:700}
+.yi-sub{color:var(--dim);font-size:15px;margin:0 0 44px}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;
+      padding:22px 24px;margin-bottom:16px}
+.card h2{font-size:15px;margin:0 0 16px;letter-spacing:.12em;font-weight:700;color:var(--fg)}
+.card p{margin:0 0 12px}
+.card p:last-child{margin-bottom:0}
+
+table{width:100%;border-collapse:collapse}
+th,td{text-align:left;padding:11px 0;border-bottom:1px solid var(--line);vertical-align:top;font-size:14.5px}
+tr:last-child th,tr:last-child td{border-bottom:0}
+th{color:var(--dim);font-weight:400;width:168px;letter-spacing:.04em;
+   padding-right:16px;line-height:1.6}
+code{background:rgba(255,255,255,.08);padding:2px 7px;border-radius:5px;
+     font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13.5px}
+
+ol.plain{margin:0;padding-left:1.35em}
+ol.plain li{margin-bottom:9px;color:var(--dim)}
+ol.plain li:last-child{margin-bottom:0}
+ol.plain b{color:var(--fg)}
+
+.tagline{display:flex;flex-wrap:wrap;gap:8px}
+.tag{font-size:12px;padding:3px 11px;border-radius:20px;border:1px solid var(--line);color:var(--dim)}
+
+.note{font-size:13.5px;color:var(--dim2);border-left:2px solid var(--line);padding-left:13px;margin-top:14px}
+
+.yi-foot{border-top:1px solid var(--line);padding:30px 24px 46px;color:var(--dim2);
+         font-size:13px;text-align:center}
+
+/* ── 页脚里的「协议入口」条 · **中性版**（永恒的旅途专用，唯一真源 _build/footer-neutral.html）
+      只放两个协议链接、**不带任何一方署名** —— 这一页是两家联合运营的中性页。 ── */
+.yi-foot__legal{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);
+                font-size:12.5px;letter-spacing:.02em}
+.yi-foot__legal a{color:var(--dim);text-decoration:none}
+.yi-foot__legal a:hover{color:var(--fg)}
+
+/* ── 两家工作室的 logo（并列 ⇒ 谁也不突出谁，保持中性）── */
+.yi-brands{display:flex;align-items:center;gap:20px;flex-wrap:wrap;
+           margin:26px 0 44px}
+.yi-brands .b{display:flex;align-items:center;gap:10px}
+.yi-brands img{width:30px;height:30px;display:block;opacity:.9}
+.yi-brands i{font-style:normal;font-size:12.5px;color:var(--dim2);letter-spacing:.08em}
+.yi-brands .sep{color:var(--dim2);font-size:13px;opacity:.7}
+/* logo 可点击（跳到各自工作室官网）—— 悬停时才给反馈，平时保持低调 */
+.yi-brands a.b{text-decoration:none;border-radius:10px;padding:4px 8px;margin:-4px -8px;
+               transition:background .16s}
+.yi-brands a.b:hover{background:rgba(255,255,255,.07)}
+.yi-brands a.b:hover i{color:var(--dim)}
+
+/* 下载按钮（绿 —— 与全站规范一致） */
+.btn{display:block;width:100%;text-align:center;text-decoration:none;color:#fff;
+     font-weight:700;font-size:16px;padding:16px;border-radius:11px;margin:16px 0 0;
+     background:#16A34A;border:none;font-family:inherit}
+.btn:hover{background:#12833C}
+
+/* 次级按钮（描边款）—— 用于「说明」类入口，不抢绿按钮的视觉重心 */
+.btn--ghost{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.32);
+            color:var(--fg);box-shadow:none;font-size:15px;padding:14px;margin-top:10px}
+.btn--ghost:hover{background:rgba(255,255,255,.18)}
+
+/* ── 服务器地址代码块 + 复制按钮 ── */
+.codebox{margin:14px 0 0;background:rgba(0,0,0,.34);
+         border:1px solid var(--line);border-radius:10px;padding:4px 14px}
+.coderow{display:flex;align-items:center;gap:10px;padding:11px 0;
+         border-bottom:1px solid rgba(255,255,255,.07)}
+.coderow:last-child{border-bottom:0}
+.coderow .k{flex:none;width:74px;font-size:13px;color:var(--dim2);letter-spacing:.02em}
+.codebox code{flex:1;min-width:0;background:none;padding:0;border-radius:0;
+              font-family:ui-monospace,Menlo,Consolas,"Courier New",monospace;
+              font-size:16px;line-height:1.5;color:var(--fg);letter-spacing:.02em;
+              word-break:break-all;
+              -webkit-user-select:all;user-select:all}   /* 长按可直接全选 */
+.copybtn{flex:none;border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.10);
+         color:var(--fg);font-size:13.5px;line-height:1;padding:9px 16px;border-radius:8px;
+         cursor:pointer;font-family:inherit;white-space:nowrap;
+         -webkit-tap-highlight-color:transparent;transition:background .15s,border-color .15s}
+.copybtn:hover{background:rgba(255,255,255,.20)}
+.copybtn.done{border-color:rgba(22,163,74,.65);color:#8FD6AC;background:rgba(22,163,74,.15)}
+.copybtn.err{border-color:rgba(217,119,6,.65);color:#F0C070;background:rgba(217,119,6,.15)}
